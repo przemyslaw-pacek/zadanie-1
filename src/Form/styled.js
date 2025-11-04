@@ -20,12 +20,12 @@ export const Content = styled.div`
 
 export const StyledText = styled.pre`
   white-space: pre-wrap;
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 80px;
 
   ${({ $processed }) =>
     $processed &&
     css`
-      color: darkblue;
+      color: lightgreen;
     `}
 `;

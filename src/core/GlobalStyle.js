@@ -11,7 +11,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body { 
-    background: lightgrey;
+    color: white;
+    background: #222;
     max-width: 1400px;
     margin: auto;
   }
