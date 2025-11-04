@@ -1,3 +1,24 @@
+# Formularz pszekształcenia tekstu
+
+![image](./printscreen.png)
+
+## Description
+
+This is a simple program that randomly rearranges the letters in each word except the first and last.
+
+## Demo
+
+If you want to check, clik [here](https://przemyslaw-pacek.github.io/zadanie-1/).
+
+## Technologies:
+
+- HTML
+- CSS
+- JavaScript
+- Normalize
+- React
+- Styled-components
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
