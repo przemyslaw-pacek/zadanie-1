@@ -9,13 +9,13 @@ function Form() {
   const processText = (text) =>
     text.replace(/([a-ząćęłńóśźż]+)/gi, (word) => shuffleWord(word));
 
-  const uploadFile = (a) => {
-    const file = a.target.files[0];
+  const uploadFile = ({ target }) => {
+    const file = target.files[0];
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = (event) => {
-      const text = event.target.result;
+    reader.onload = ({ target }) => {
+      const text = target.result;
       setOriginalText(text);
       setProcessedText(processText(text));
     };
