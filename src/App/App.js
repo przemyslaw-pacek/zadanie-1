@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Content, Header, Info, StyledText, Title } from "./styled";
 import { shuffleWord } from "./shuffleWord";
 
-function Form() {
+function App() {
   const [originalText, setOriginalText] = useState("");
   const [processedText, setProcessedText] = useState("");
 
@@ -41,4 +41,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default App;
