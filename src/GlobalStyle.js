@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   *,
-  ::after ::before {
+  ::after, ::before {
     box-sizing: inherit;
   }
   
