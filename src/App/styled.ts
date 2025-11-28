@@ -18,7 +18,9 @@ export const Content = styled.div`
   margin: 20px;
 `;
 
-export const StyledText = styled.pre`
+export const StyledText = styled.pre<{
+  $processed?: boolean;
+}>`
   white-space: pre-wrap;
   font-size: 18px;
   margin-bottom: 80px;

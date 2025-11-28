@@ -6,18 +6,22 @@ function App() {
   const [originalText, setOriginalText] = useState("");
   const [processedText, setProcessedText] = useState("");
 
-  const processText = (text) =>
+  const processText = (text: string) =>
     text.replace(/([a-ząćęłńóśźż]+)/gi, (word) => shuffleWord(word));
 
-  const uploadFile = ({ target }) => {
-    const file = target.files[0];
+  const uploadFile = ({
+    target,
+  }: React.ChangeEvent<HTMLInputElement>): void => {
+    const file = target.files?.[0];
     if (!file) return;
 
     const reader = new FileReader();
-    reader.onload = ({ target }) => {
-      const text = target.result;
-      setOriginalText(text);
-      setProcessedText(processText(text));
+    reader.onload = ({ target }: ProgressEvent<FileReader>) => {
+      const text = target?.result;
+      if (typeof text === "string") {
+        setOriginalText(text);
+        setProcessedText(processText(text));
+      }
     };
     reader.readAsText(file, "UTF-8");
   };

@@ -1,4 +1,4 @@
-export const shuffleWord = (word) => {
+export const shuffleWord = (word: string) => {
   if (word.length < 4) return word;
 
   const first = word[0];
