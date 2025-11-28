@@ -28,7 +28,7 @@ function App() {
 
   return (
     <form>
-      <Header>Formularz pszekształcenia tekstu</Header>
+      <Header>Formularz przekształcenia tekstu</Header>
       <Info>
         <Title>Tylko plik .txt</Title>
         <input type="file" accept=".txt" onChange={uploadFile} />
