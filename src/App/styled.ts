@@ -24,6 +24,7 @@ export const StyledText = styled.pre<{
   white-space: pre-wrap;
   font-size: 18px;
   margin-bottom: 80px;
+  color: yellow;
 
   ${({ $processed }) =>
     $processed &&
